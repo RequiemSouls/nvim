@@ -10,6 +10,7 @@ return {
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
       "hrsh7th/cmp-cmdline",
+      {"petertriho/cmp-git", opts = {} },
     },
     opts = function()
       local cmp = require("cmp")
@@ -70,6 +71,7 @@ return {
           {name = "nvim_lua"},
           {name = "path"},
           {name = "buffer"},
+          {name = "git"},
         }),
         formatting = {
           fields = { 'abbr', "menu"},

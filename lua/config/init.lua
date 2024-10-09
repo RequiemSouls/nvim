@@ -43,8 +43,16 @@ require("lazy").setup({
       "folke/which-key.nvim"
     },
     {
-      "tpope/vim-fugitive"
+      "tpope/vim-fugitive",
+      cmd = "Git",
+      keys = {
+        {"<leader>gg", "<cmd>Git<cr>", desc = "fugitive"}
+      }
     },
+    {
+      "lewis6991/gitsigns.nvim",
+      config = true
+    }
   },
   install = {colorscheme = {"habamax"}},
   checker = {enabled = true},
