@@ -52,6 +52,14 @@ require("lazy").setup({
     {
       "lewis6991/gitsigns.nvim",
       config = true
+    },
+    {
+      "nvim-neo-tree/neo-tree.nvim",
+      dependencies = {
+        "nvim-lua/plenary.nvim",
+        "nvim-tree/nvim-web-devicons",
+        "MunifTanjim/nui.nvim"
+      }
     }
   },
   install = {colorscheme = {"habamax"}},
