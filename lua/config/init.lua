@@ -38,6 +38,9 @@ require("lazy").setup({
         })
         require("lspconfig").clangd.setup({})
       end,
+      keys = {
+        {"gd", vim.lsp.buf.definition, desc = "goto definition"},
+      }
     },
     {
       "folke/which-key.nvim"
